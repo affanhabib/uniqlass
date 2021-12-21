@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+.carousel-image {
+    background-image: url("public/img/ornamen.png");
+    background-position: center;
+    height: 100px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.name {
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #16A085;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #16A085;
+}
+
+.desc{
+    font-size: 16px;
+}
+
+.mitra {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #16A085;
+}
+
+.sosmed {
+    font-family: 'Roboto', sans-serif;
+    color: #16A085;
+}
+
+.footer {
+    background-color: #005C66;
+}
+
+.kontak {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.cr {
+    background-color: #066F7A;
+}
