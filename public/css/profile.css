@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+.banner {
+    background-color: #005C66;
+    height: 150px;
+}
+
+.card{
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.visi {
+    font-size: 1.475em;
+}
+
+.tim {
+    text-align: center;
+}
+
+.card-img-top {
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}

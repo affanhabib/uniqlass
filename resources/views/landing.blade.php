@@ -1,5 +1,99 @@
 @extends('baseLanding')
 
+@section('keuntungan')
+
+<div class="bg-light py-5">
+    <div class="d-flex justify-content-center pb-3">
+        <h1 class="mitra">Keuntungan</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p class="text-center col-10 desc mt-3 mb-5">Bergabung bersama <span style="color: #16A085;">Uniqlass</span> memiliki banyak <span style="color: #16A085; font-weight: bold;">keuntungan</span>, diantaranya:</p>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-sm-5 col-md-3 my-3 mx-2">
+                <div class="row d-flex justify-content-center">
+                    <span class="step">1</span>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <h3 class="mitra">Bantuan Soft Marketing</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <p class="desc">Pembuatan berbagai jenis konten (artikel/video/reels/story) di platform <span style="color: #16A085;">Uniqlass</span> untuk meningkatkan brand awareness dan engagement milik <span style="color: #16A085;">Uniqpartner</span></p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 my-3 mx-2">
+                <div class="row d-flex justify-content-center">
+                    <span class="step">2</span>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <h3 class="mitra">Paket Instagram Ads</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <p class="desc">Penyediaan jasa paket Instagram Ads yang dapat digunakan oleh <span style="color: #16A085;">Uniqpartner</span> dengan biaya terjangkau</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 my-3 mx-2">
+                <div class="row d-flex justify-content-center">
+                    <span class="step">3</span>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <h3 class="mitra">Tester Website Uniqlass</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <p class="desc"><span class="badge badge-danger">Segera Hadir</span><br><span style="color: #16A085;">Uniqpartner</span> memiliki hak untuk melakukan uji coba pada website yang sedang dikembangkan oleh tim <span style="color: #16A085;">Uniqlass</span>, sehingga <span style="color: #16A085;">Uniqpartner</span> dapat memberikan masukan agar website dapat membantu memaksimalkan potensi usaha <span style="color: #16A085;">Uniqpartner</span> kedepannya</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 my-3 mx-2">
+                <div class="row d-flex justify-content-center">
+                    <span class="step">4</span>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <h3 class="mitra">Seminar dan Workshop Kewirausahaan</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <p class="desc"><span class="badge badge-danger">Segera Hadir</span><br>Pengadaan seminar dan workshop yang dapat diikuti oleh <span style="color: #16A085;">Uniqpartner</span> untuk meningkatkan kapasitas <span style="color: #16A085;">Uniqpartner</span> dalam berwirausaha dan mengembangkan usaha pelatihan yang dimiliki</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 my-3 mx-2">
+                <div class="row d-flex justify-content-center">
+                    <span class="step">5</span>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <h3 class="mitra">Memperluas Pasar</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <p class="desc">Bergabung dengan <span style="color: #16A085;">Uniqlass</span> membantu usaha <span style="color: #16A085;">Uniqpartner</span> untuk mudah ditemukan dan direkomendasikan pada masyarakat dan calon peserta kelas</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 my-3 mx-2">
+                <div class="row d-flex justify-content-center">
+                    <span class="step">6</span>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <h3 class="mitra">Networking</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center">
+                    <p class="desc">Bergabung dengan <span style="color: #16A085;">Uniqlass</span> dapat meningkatkan jejaring profesional dari <span style="color: #16A085;">Uniqpartner</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <span class="step">7</span>
+        </div>
+        <div class="d-flex justify-content-center mt-2">
+            <h3 class="mitra">GRATIS Biaya Pendaftaran Uniqpartner</h3>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="desc">Tunggu apa lagi, daftarkan kelasmu sekarang!</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a type="button" class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSexlwW1ccXEzWaSeb6_way7s2Mp83EbAel3rnJgma1U1t2XYg/viewform" target="_blank">Bergabung Menjadi Uniqpartner</a>
+        </div>
+    </div>
+</div>
+@endsection
+
 @section('insta')
 <div>
     <div class="row">

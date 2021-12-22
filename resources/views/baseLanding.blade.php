@@ -31,18 +31,18 @@
                     <img src="{{ asset('img/uniqlass_no background.png') }}" alt="" height="40">
                 </div>
                 <div class="row pb-5 my-5">
-                    <div class="col-md-6 carousel py-5">
+                    <div class="col-md-6 py-5">
                         <h6 class="name">UNIQLASS</h6>
                         <h1 class="title pt-1 pb-3">Maksimalkan Potensimu, Daftarkan Kelasmu Sekarang!</h1>
-                        <p class="text-secondary pb-5">Jika kamu adalah para pelatih, instruktur, maupun mentor, Uniqlass akan membantu kamu untuk menjangkau pasar yang lebih luas</p>
-                        <button type="button" class="btn btn-success">Bergabung bersama Kami!</button>
+                        <p class="text-secondary pb-5">Jika kamu adalah para pelatih, instruktur, maupun mentor, <span style="color: #16A085;">Uniqlass</span> akan membantu kamu untuk menjangkau pasar yang lebih luas</p>
+                        <a type="button" class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSexlwW1ccXEzWaSeb6_way7s2Mp83EbAel3rnJgma1U1t2XYg/viewform" target="_blank">Bergabung bersama Kami!</a>
                     </div>
                     <div class="col-md-6">
                         <!-- <img src="{{ asset('img/ornamen.png') }}" alt="" height="20%"> -->
                     </div>
                 </div>
             </div>
-            <div class="bg-light my-5">
+            <div class="bg-light mt-5">
                 <div class="container py-5">
                     <div class="d-flex justify-content-center">
                         <img src="{{ asset('img/uniqlass_no background.png') }}" alt="" height="90">
@@ -51,11 +51,12 @@
                         <p class="text-center col-10 desc my-5"><span style="color: #16A085;">Uniqlass</span> adalah sebuah platform yang menjembatani peserta dengan pemilik kelas melalui fitur yang akan datang yaitu fitur booking kelas secara online. <span style="color: #16A085;">Uniqlass</span> juga menyediakan wadah untuk peningkatan skill, healing, maupun socializing melalui event tematik dan berbagai jenis kelas yang tersedia</p>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-success">Tentang Uniqlass</button>
+                        <a type="button" class="btn btn-outline-success" href="{{url('tentang-kami')}}">Tentang Uniqlass</a>
                     </div>
                 </div>
             </div>
-            <div class="pb-5">
+            @yield('keuntungan')
+            <div class="pb-5 mt-5">
                 <div class="container pt-2 pb-5">
                     <div class="d-flex justify-content-center">
                         <h2 class="mitra">Mitra Kami</h2>
@@ -63,6 +64,7 @@
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -87,9 +89,23 @@
                                             <img src="{{ asset('img/mitra/crescendo_musik.jpg') }}" height="150">
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
                                     <div class="col">
                                         <div class="d-flex justify-content-center">
                                             <img src="{{ asset('img/mitra/chord_music_course.jpg') }}" height="150">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="{{ asset('img/mitra/korisha.jpeg') }}" height="150">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="{{ asset('img/mitra/korea.jpeg') }}" height="150">
                                         </div>
                                     </div>
                                 </div>
