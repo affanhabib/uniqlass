@@ -31,6 +31,12 @@
     text-align: center;
 }
 
+.judul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #16A085;
+}
+
 .sosmed {
     font-family: 'Roboto', sans-serif;
     color: #16A085;
@@ -62,3 +68,28 @@ span.step {
     text-align: center;
     width: 1.6em;
 }
+
+.card{
+    border-radius: 1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.card-img-top{
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.base-cover{
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)), url("/img/event/Workshop Bahasa Korea untuk Pemula.png");
+    /* overflow: hidden; */
+    background-size: cover;
+    height: 700px;
+}
+
+/* .img-cover{
+    opacity: 0.75;
+}
+
+.img-cover:hover{
+    opacity: 0.25;
+} */

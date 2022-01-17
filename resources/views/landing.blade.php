@@ -2,7 +2,7 @@
 
 @section('keuntungan')
 
-<div class="bg-light py-5">
+<div class="py-5">
     <div class="d-flex justify-content-center pb-3">
         <h1 class="mitra">Keuntungan</h1>
     </div>
@@ -290,6 +290,23 @@
         <div class="col d-none d-md-block">
             <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
                 <a type="button" class="btn btn-outline-success" href="https://www.youtube.com/channel/UCc_eiFvNvX8YNk3XGw4QKKA" target="_blank">Kunjungi Youtube Uniqlass</a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('event')
+<div>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Uniqevent 2.0</h6>
+                    <h5 class="card-title">Workshop Bahasa Korea untuk Pemula</h5>
+                    <a type="button" class="btn btn-success" href="{{url('uniqevent-2')}}">Selengkapnya</a>
+                </div>
             </div>
         </div>
     </div>

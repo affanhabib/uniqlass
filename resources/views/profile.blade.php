@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('profile')
+@section('content')
 <div>
     <div class="banner d-flex align-items-center">
         <div class="container">

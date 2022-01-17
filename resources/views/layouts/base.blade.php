@@ -32,62 +32,62 @@
                 </div>
             </nav>
             <div>
-                @yield('profile')
+                @yield('content')
             </div>
-            <footer>
-                <div class="footer py-3">
-                    <div class="container">
-                        <div class="row d-flex justify-content-between pt-4">
-                            <div class="col-md-3 pb-3">
-                                <img src="{{ asset('img/uniqlass_logo putih.png') }}" alt="" height="70">
+        </div>
+        <footer>
+            <div class="footer py-3">
+                <div class="container">
+                    <div class="row d-flex justify-content-between pt-4">
+                        <div class="col-md-3 pb-3">
+                            <img src="{{ asset('img/uniqlass_logo putih.png') }}" alt="" height="70">
+                        </div>
+                        <div class="col-md-4 text-white pb-3 ml-3">
+                            <div class="row">
+                                <h5 class="kontak">Kontak Kami</h5>
                             </div>
-                            <div class="col-md-4 text-white pb-3 ml-3">
-                                <div class="row">
-                                    <h5 class="kontak">Kontak Kami</h5>
-                                </div>
-                                <div class="row">
-                                    <p>EJSC Bakorwil Madiun<br>
-                                    Jl. Jawa No.23, Kartoharjo, Kec.Mangunharjo, Kota Madiun, Jawa Timur, Indonesia 63122</p>
-                                </div>
-                                <div class="row">
-                                    <span class="material-icons">email</span>
-                                    <p class="ml-1">adm.uniqlass@gmail.com</p>
-                                </div>
+                            <div class="row">
+                                <p>EJSC Bakorwil Madiun<br>
+                                Jl. Jawa No.23, Kartoharjo, Kec.Mangunharjo, Kota Madiun, Jawa Timur, Indonesia 63122</p>
                             </div>
-                            <div class="col-md-3 text-white pb-3 ml-3">
-                                <div class="row">
-                                    <h5 class="kontak">Temukan Kami</h5>
-                                </div>
-                                <div class="row">
-                                    <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/uniqlass" target="_blank">
-                                        <span class="fa fa-instagram" style="color: white;"></span>
-                                    </a>
-                                    <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/channel/UCc_eiFvNvX8YNk3XGw4QKKA" target="_blank">
-                                        <span class="fa fa-youtube" style="color: white;"></span>
-                                    </a>
-                                    <a class="btn btn-social-icon btn-spotify" href="https://open.spotify.com/show/4MPqkvizIGammCEsmUrWnp" target="_blank">
-                                        <span class="fa fa-spotify" style="color: white;"></span>
-                                    </a>
-                                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/uniqlass.id" target="_blank">
-                                        <span class="fa fa-facebook" style="color: white;"></span>
-                                    </a>
-                                    <a class="btn btn-social-icon btn-whatsapp" href="https://wa.me/6282340576107" target="_blank">
-                                        <span class="fa fa-whatsapp" style="color: white;"></span>
-                                    </a>
-                                    <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/uniqlass" target="_blank">
-                                        <span class="fa fa-linkedin" style="color: white;"></span>
-                                    </a>
-                                </div>
+                            <div class="row">
+                                <span class="material-icons">email</span>
+                                <p class="ml-1">adm.uniqlass@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-white pb-3 ml-3">
+                            <div class="row">
+                                <h5 class="kontak">Temukan Kami</h5>
+                            </div>
+                            <div class="row">
+                                <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/uniqlass" target="_blank">
+                                    <span class="fa fa-instagram" style="color: white;"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/channel/UCc_eiFvNvX8YNk3XGw4QKKA" target="_blank">
+                                    <span class="fa fa-youtube" style="color: white;"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-spotify" href="https://open.spotify.com/show/4MPqkvizIGammCEsmUrWnp" target="_blank">
+                                    <span class="fa fa-spotify" style="color: white;"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/uniqlass.id" target="_blank">
+                                    <span class="fa fa-facebook" style="color: white;"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-whatsapp" href="https://wa.me/6282340576107" target="_blank">
+                                    <span class="fa fa-whatsapp" style="color: white;"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/uniqlass" target="_blank">
+                                    <span class="fa fa-linkedin" style="color: white;"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cr">
-                    <div class="d-flex justify-content-center">
-                        <p class="text-white mt-3">Copyright 2022 @ Uniqlass | All Rights Reserved</p>
-                    </div>
+            </div>
+            <div class="cr">
+                <div class="d-flex justify-content-center">
+                    <p class="text-white mt-3">Copyright 2022 @ Uniqlass | All Rights Reserved</p>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 </html>

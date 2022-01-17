@@ -30,7 +30,7 @@
                 <div class="d-flex justify-content-center align-items-center logo">
                     <img src="{{ asset('img/uniqlass_no background.png') }}" alt="" height="40">
                 </div>
-                <div class="row pb-5 my-5">
+                <!-- <div class="row pb-5 my-5">
                     <div class="col-md-6 py-5">
                         <h6 class="name">UNIQLASS</h6>
                         <h1 class="title pt-1 pb-3">Maksimalkan Potensimu, Daftarkan Kelasmu Sekarang!</h1>
@@ -38,8 +38,44 @@
                         <a type="button" class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSexlwW1ccXEzWaSeb6_way7s2Mp83EbAel3rnJgma1U1t2XYg/viewform" target="_blank">Bergabung bersama Kami!</a>
                     </div>
                     <div class="col-md-6">
-                        <!-- <img src="{{ asset('img/ornamen.png') }}" alt="" height="20%"> -->
+                        <img src="{{ asset('img/ornamen.png') }}" alt="" height="20%">
                     </div>
+                </div> -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active base-cover">
+                            <!-- <img src="{{ asset('img/event/WORKSHOP BAHASA KOREA UNTUK PEMULA.png') }}" class="d-block w-100 img-cover" alt="..."> -->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 class="title pb-3">Workshop Bahasa Korea untuk Pemula</h1>
+                                <a type="button" class="btn btn-success" href="{{url('uniqevent-2')}}">Daftar Sekarang</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row pb-5 my-5">
+                                <div class="col-md-6 py-5">
+                                    <h6 class="name">UNIQLASS</h6>
+                                    <h1 class="title pt-1 pb-3">Maksimalkan Potensimu, Daftarkan Kelasmu Sekarang!</h1>
+                                    <p class="text-secondary pb-5">Jika kamu adalah para pelatih, instruktur, maupun mentor, <span style="color: #16A085;">Uniqlass</span> akan membantu kamu untuk menjangkau pasar yang lebih luas</p>
+                                    <a type="button" class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSexlwW1ccXEzWaSeb6_way7s2Mp83EbAel3rnJgma1U1t2XYg/viewform" target="_blank">Bergabung bersama Kami!</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- <img src="{{ asset('img/ornamen.png') }}" alt="" height="20%"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
             <div class="bg-light mt-5">
@@ -56,9 +92,9 @@
                 </div>
             </div>
             @yield('keuntungan')
-            <div class="pb-5 mt-5">
+            <div class="pb-5 mt-5 bg-light">
                 <div class="container pt-2 pb-5">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center pb-3 mt-5">
                         <h2 class="mitra">Mitra Kami</h2>
                     </div>
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -120,6 +156,14 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="container pt-2 pb-5">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="mitra">Event Kami</h2>
+                    </div>
+                    @yield('event')
                 </div>
             </div>
             <div class="bg-light py-5">
