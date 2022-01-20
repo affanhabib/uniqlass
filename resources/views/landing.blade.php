@@ -297,15 +297,25 @@
 @endsection
 
 @section('event')
-<div>
+<div class="mt-3">
     <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
+        <div class="col-4">
+            <div class="card" style="width: 18rem; height: 30rem;">
                 <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-subtitle mb-2 text-muted">Uniqevent 2.0</h6>
-                    <h5 class="card-title">Workshop Bahasa Korea untuk Pemula</h5>
+                    <h5 class="card-title" style="height: 3rem;">Workshop Bahasa Korea untuk Pemula</h5>
                     <a type="button" class="btn btn-success" href="{{url('uniqevent-2')}}">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem; height: 30rem;">
+                <img src="{{ asset('img/event/UNIQEVENT 3.0.png') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Uniqevent 3.0</h6>
+                    <h5 class="card-title" style="height: 3rem;">Mindfulness Session</h5>
+                    <a type="button" class="btn btn-success" href="{{url('uniqevent-3')}}">Selengkapnya</a>
                 </div>
             </div>
         </div>
