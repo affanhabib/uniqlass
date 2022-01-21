@@ -297,9 +297,9 @@
 @endsection
 
 @section('event')
-<div class="mt-3">
-    <div class="row">
-        <div class="col-4">
+<div class="container mt-3">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 col-md-6 pb-5">
             <div class="card" style="width: 18rem; height: 30rem;">
                 <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -309,7 +309,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 pb-5">
             <div class="card" style="width: 18rem; height: 30rem;">
                 <img src="{{ asset('img/event/UNIQEVENT 3.0.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
