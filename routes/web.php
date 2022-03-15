@@ -21,5 +21,4 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('tentang-kami', function () { return view('profile'); });
-Route::get('uniqevent-2', function () { return view('event'); });
-Route::get('uniqevent-3', function () { return view('event2'); });
+Route::get('uniqevent-4', function () { return view('event'); });

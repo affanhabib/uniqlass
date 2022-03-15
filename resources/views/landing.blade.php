@@ -301,21 +301,31 @@
     <div class="row d-flex justify-content-center">
         <div class="col-lg-4 col-md-6 pb-5">
             <div class="card" style="width: 18rem; height: 30rem;">
+                <img src="{{ asset('img/event/Poster terbaru Uniqevent 4.0.png') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Uniqevent 4.0</h6>
+                    <h5 class="card-title" style="height: 3rem;">MINDFULNESS SESSION : FINDING YOUR SELF</h5>
+                    <a type="button" class="btn btn-success" href="{{url('uniqevent-4')}}">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-5 eventEnd">
+            <div class="card" style="width: 18rem; height: 30rem;">
                 <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-subtitle mb-2 text-muted">Uniqevent 2.0</h6>
                     <h5 class="card-title" style="height: 3rem;">Workshop Bahasa Korea untuk Pemula</h5>
-                    <a type="button" class="btn btn-success" href="{{url('uniqevent-2')}}">Selengkapnya</a>
+                    <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 pb-5">
+        <div class="col-lg-4 col-md-6 pb-5 eventEnd">
             <div class="card" style="width: 18rem; height: 30rem;">
                 <img src="{{ asset('img/event/UNIQEVENT 3.0.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-subtitle mb-2 text-muted">Uniqevent 3.0</h6>
                     <h5 class="card-title" style="height: 3rem;">Mindfulness Session</h5>
-                    <a type="button" class="btn btn-success" href="{{url('uniqevent-3')}}">Selengkapnya</a>
+                    <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
                 </div>
             </div>
         </div>

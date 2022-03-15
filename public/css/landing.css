@@ -93,3 +93,7 @@ span.step {
 .img-cover:hover{
     opacity: 0.25;
 } */
+
+.eventEnd {
+    filter: grayscale(100%);
+}

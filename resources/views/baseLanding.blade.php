@@ -55,29 +55,21 @@
                                 <a type="button" class="btn btn-success" href="{{url('uniqevent-2')}}">Daftar Sekarang</a>
                             </div> --}}
                             <div class="row pb-5 my-5">
+                                <div class="col-2"></div>
                                 <div class="col-md-6 py-5">
-                                    <h6 class="name">UNIQEVENT 2.0</h6>
-                                    <h1 class="title pt-1 pb-3" style="height: 7rem;">Workshop Bahasa Korea untuk Pemula</h1>
-                                    <p class="text-secondary pb-5">Kesempatan emas buat kalian yang ingin belajar hangeul dan yang ingin bisa berkomunikasi dengan idol di media sosial</p>
-                                    <a type="button" class="btn btn-success" href="{{url('uniqevent-2')}}" target="_blank">Daftar Sekarang</a>
+                                    <h6 class="name">UNIQEVENT 4.0</h6>
+                                    <h1 class="title pt-1 pb-3">MINDFULNESS SESSION : FINDING YOUR SELF</h1>
+                                    <p class="text-secondary pb-5">Dipandu langsung dengan intstruktur tersertifikasi Bobby Wibowo<br> <span style="color: white">.</span></p>
+                                    <a type="button" class="btn btn-success" href="{{url('uniqevent-4')}}">Daftar Sekarang</a>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row pb-5 my-5">
-                                <div class="col-md-6 py-5">
-                                    <h6 class="name">UNIQEVENT 3.0</h6>
-                                    <h1 class="title pt-1 pb-3" style="height: 7rem;">Mindfulness<br>Session</h1>
-                                    <p class="text-secondary pb-5">Dipandu langsung dengan intstruktur tersertifikasi Bobby Wibowo, kita akan merefresh otak yang penat karena aktivitas</p>
-                                    <a type="button" class="btn btn-success" href="{{url('uniqevent-3')}}" target="_blank">Daftar Sekarang</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row pb-5 my-5">
+                                <div class="col-2"></div>
                                 <div class="col-md-6 py-5">
                                     <h6 class="name">UNIQLASS</h6>
-                                    <h1 class="title pt-1 pb-3" style="height: 7rem;">Maksimalkan Potensimu, Daftarkan Kelasmu Sekarang!</h1>
+                                    <h1 class="title pt-1 pb-3">Maksimalkan Potensimu, Daftarkan Kelasmu Sekarang!</h1>
                                     <p class="text-secondary pb-5">Jika kamu adalah para pelatih, instruktur, maupun mentor, <span style="color: #16A085;">Uniqlass</span> akan membantu kamu untuk menjangkau pasar yang lebih luas</p>
                                     <a type="button" class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSexlwW1ccXEzWaSeb6_way7s2Mp83EbAel3rnJgma1U1t2XYg/viewform" target="_blank">Bergabung bersama Kami!</a>
                                 </div>
