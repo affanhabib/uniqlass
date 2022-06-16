@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
+// Route::get('/', function () {
+//     return view('landing');
+// });
 
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
-Route::get('tentang-kami', function () { return view('profile'); });
-Route::get('uniqevent-4', function () { return view('event'); });
+Route::resource('/', 'LandingController');
+// Route::get('tentang-kami', function () { return view('profile'); });
+Route::resource('/tentang-kami', 'TentangController');

@@ -1,5 +1,68 @@
 @extends('baseLanding')
 
+@section('carousel')
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        @foreach ($data['carousel'] as $crs)
+        <div class="carousel-item">
+            <div class="row pb-5 my-5">
+                <div class="col-2"></div>
+                <div class="col-md-6 py-5">
+                    <h6 class="name">{{ $crs->program }} {{ $crs->subprogram }}</h6>
+                    <h1 class="title pt-1 pb-3">{{ $crs->judul_event }}</h5>
+                    <span class="text-secondary pb-5">{!! $crs->deskripsi !!}</span>
+                    <a type="button" class="btn btn-success" href="">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+        @endforeach
+        <div class="carousel-item active">
+            <div class="row pb-5 my-5">
+                <div class="col-2"></div>
+                <div class="col-md-6 py-5">
+                    <h6 class="name">UNIQLASS</h6>
+                    <h1 class="title pt-1 pb-3">{{ $data['homepage']->judul }}</h1>
+                    <span class="text-secondary pb-5">{!! $data['homepage']->caption !!}</span>
+                    <a type="button" class="btn btn-success" href="{{ $data['homepage']->link }}" target="_blank">{{ $data['homepage']->tombol }}</a>
+                </div>
+                <div class="col-md-6">
+                    {{-- <img src="{{ asset('img/ornamen.png') }}" alt="" height="20%"> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+@endsection
+
+@section('deskripsi')
+<div class="bg-light mt-5">
+    <div class="container py-5">
+        <div class="d-flex justify-content-center">
+            <img src="{{ asset('img/uniqlass_no background.png') }}" alt="" height="90">
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="text-center col-10 desc my-5">{{ $data['homepage']->deskripsi }}</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a type="button" class="btn btn-outline-success" href="{{url('tentang-kami')}}">Tentang Uniqlass</a>
+        </div>
+    </div>
+</div>
+@endsection
+
 @section('keuntungan')
 
 <div class="py-5">
@@ -98,9 +161,9 @@
 <div>
     <div class="row">
         <div class="col">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CXCWZLEB-D4/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <blockquote class="instagram-media" data-instgrm-permalink="{{ $data['homepage']->ig1 }}">
                 <div style="padding:16px;">
-                    <a href="https://www.instagram.com/p/CXCWZLEB-D4/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <a href="{{ $data['homepage']->ig1 }}" target="_blank">
                         <div style=" display: flex; flex-direction: row; align-items: center;">
                             <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                                 <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -151,9 +214,9 @@
             <script async src="//www.instagram.com/embed.js"></script>
         </div>
         <div class="col d-none d-sm-block">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CWDJlHRBZdw/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <blockquote class="instagram-media" data-instgrm-permalink="{{ $data['homepage']->ig2 }}">
                 <div style="padding:16px;">
-                    <a href="https://www.instagram.com/p/CWDJlHRBZdw/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <a href="{{ $data['homepage']->ig2 }}" target="_blank">
                         <div style=" display: flex; flex-direction: row; align-items: center;">
                             <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                                 <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -204,9 +267,9 @@
             <script async src="//www.instagram.com/embed.js"></script>
         </div>
         <div class="col d-none d-xl-block">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CV0cVmFBqkM/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <blockquote class="instagram-media" data-instgrm-permalink="{{ $data['homepage']->ig3 }}">
                 <div style="padding:16px;">
-                    <a href="https://www.instagram.com/p/CV0cVmFBqkM/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <a href="{{ $data['homepage']->ig3 }}" target="_blank">
                         <div style=" display: flex; flex-direction: row; align-items: center;">
                             <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                                 <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -264,29 +327,16 @@
 <div>
     <div class="row">
         <div class="col">
-            <iframe src="https://www.youtube.com/embed/EBawK_FM-G0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/{{ $data['homepage']->yt1 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col">
-            <iframe src="https://www.youtube.com/embed/CX6fLl5MiqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/{{ $data['homepage']->yt2 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col d-none d-lg-block">
-            <iframe src="https://www.youtube.com/embed/_pohOlu0Sns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/{{ $data['homepage']->yt3 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="col d-none d-lg-block">
-            <iframe src="https://www.youtube.com/embed/3LVxuTt2Eq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col d-none d-lg-block">
-            <iframe src="https://www.youtube.com/embed/26lKjC6L7OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col d-none d-lg-block">
-            <iframe src="https://www.youtube.com/embed/FE0MlF7tvec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col d-none d-lg-block">
-            <iframe src="https://www.youtube.com/embed/0hUDqO14DYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col d-none d-xl-block">
-            <iframe src="https://www.youtube.com/embed/Z_gcW3M7iJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    </div>
+    <div class="row">
         <div class="col d-none d-md-block">
             <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
                 <a type="button" class="btn btn-outline-success" href="https://www.youtube.com/channel/UCc_eiFvNvX8YNk3XGw4QKKA" target="_blank">Kunjungi Youtube Uniqlass</a>
@@ -297,38 +347,49 @@
 @endsection
 
 @section('event')
-<div class="container mt-3">
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-4 col-md-6 pb-5">
-            <div class="card" style="width: 18rem; height: 30rem;">
-                <img src="{{ asset('img/event/Poster terbaru Uniqevent 4.0.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Uniqevent 4.0</h6>
-                    <h5 class="card-title" style="height: 3rem;">MINDFULNESS SESSION : FINDING YOUR SELF</h5>
-                    <a type="button" class="btn btn-success" href="{{url('uniqevent-4')}}">Selengkapnya</a>
-                </div>
-            </div>
+@if ($data['event']->isNotEmpty())
+<div class="py-5">
+    <div class="container pt-2 pb-5">
+        <div class="d-flex justify-content-center">
+            <h2 class="mitra">Event Kami</h2>
         </div>
-        <div class="col-lg-4 col-md-6 pb-5 eventEnd">
-            <div class="card" style="width: 18rem; height: 30rem;">
-                <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Uniqevent 2.0</h6>
-                    <h5 class="card-title" style="height: 3rem;">Workshop Bahasa Korea untuk Pemula</h5>
-                    <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
+        <div class="container mt-3">
+            <div class="row d-flex justify-content-center">
+                @foreach ($data['event'] as $evt)
+                @if($evt->tanggal_berakhir > date('Y-m-d'))
+                <div class="col-lg-4 col-md-6 pb-5">
+                    <div class="card" style="width: 18rem; height: 30rem;">
+                        <img src="{{ asset('img/public/poster/') }}/{{ $evt->poster }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
+                            <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
+                            <a type="button" class="btn btn-success" href="">Selengkapnya</a>
+                        </div>
+                    </div>
                 </div>
+                @else
+                <div class="col-lg-4 col-md-6 pb-5 eventEnd">
+                    <div class="card" style="width: 18rem; height: 30rem;">
+                        <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
+                            <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
+                            <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+                @endif
+                @endforeach
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 pb-5 eventEnd">
-            <div class="card" style="width: 18rem; height: 30rem;">
-                <img src="{{ asset('img/event/UNIQEVENT 3.0.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Uniqevent 3.0</h6>
-                    <h5 class="card-title" style="height: 3rem;">Mindfulness Session</h5>
-                    <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
+            <div class="row">
+                <div class="col d-none d-md-block">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
+                        <a type="button" class="btn btn-outline-success" href="">Lihat Semua Event Uniqlass</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@endif
 @endsection
