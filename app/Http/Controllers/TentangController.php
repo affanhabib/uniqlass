@@ -17,7 +17,7 @@ class TentangController extends Controller
     {
         $id = '1';
         $data['tentang'] = Tentang::find($id);
-        $data['founder'] = Founder::all()->latest();
+        $data['founder'] = Founder::all()->last();
         return view('tentang.index',['data' => $data]);
     }
 
