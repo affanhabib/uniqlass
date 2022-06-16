@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Tentang;
-use App\Founder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class TentangController extends Controller
@@ -17,7 +17,7 @@ class TentangController extends Controller
     {
         $id = '1';
         $data['tentang'] = Tentang::find($id);
-        $data['founder'] = Founder::all()->last()->get();
+        $data['founder'] = DB::table('founders')->latest()->get();
         return view('tentang.index',['data' => $data]);
     }
 
