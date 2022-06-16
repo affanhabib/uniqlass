@@ -57,8 +57,8 @@
             <div class="row">
                 @foreach ($data['founder'] as $fdr)
                 <div class="col-lg-4 my-3">
-                    <div class="card tim">
-                        <img src="{{ asset('img/public/founder/') }}/{{ $fdr->foto }}" class="card-img-top" alt="">
+                    <div class="cardo tim">
+                        <img src="{{ asset('img/public/founder/') }}/{{ $fdr->foto }}" class="card-img-top profile" alt="">
                         <div class="card-body">
                             <h3 class="card-title title">{{ $fdr->nama }}</h3>
                             <p class="card-text">{{ $fdr->jabatan }}</p>

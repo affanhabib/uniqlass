@@ -109,6 +109,13 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
+                    <div class="row">
+                        <div class="col d-none d-md-block">
+                            <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
+                                <a type="button" class="btn btn-outline-success" href="/mitra">Lihat Detail Mitra Uniqlass</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             @yield('event')

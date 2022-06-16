@@ -5,7 +5,7 @@
     height: 150px;
 }
 
-.card{
+.cardo{
     padding: 1.5em .5em .5em;
     border-radius: 2em;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.card-img-top {
+.profile {
     width: 50%;
     border-radius: 50%;
     margin: 0 auto;

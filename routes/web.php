@@ -21,5 +21,6 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/', 'LandingController');
-// Route::get('tentang-kami', function () { return view('profile'); });
 Route::resource('/tentang-kami', 'TentangController');
+Route::resource('/event', 'EventController');
+Route::resource('mitra', 'MitraController');

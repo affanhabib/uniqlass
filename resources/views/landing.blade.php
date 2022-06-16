@@ -363,7 +363,7 @@
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
                             <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
-                            <a type="button" class="btn btn-success" href="">Selengkapnya</a>
+                            <a type="button" class="btn btn-success" href="{{ route('event.show',$evt->judul_event) }}">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -384,7 +384,7 @@
             <div class="row">
                 <div class="col d-none d-md-block">
                     <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
-                        <a type="button" class="btn btn-outline-success" href="">Lihat Semua Event Uniqlass</a>
+                        <a type="button" class="btn btn-outline-success" href="/event">Lihat Semua Event Uniqlass</a>
                     </div>
                 </div>
             </div>
