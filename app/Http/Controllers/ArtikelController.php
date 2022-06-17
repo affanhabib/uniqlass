@@ -46,9 +46,9 @@ class ArtikelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($judul)
     {
-        $artikel = Article::find($id);
+        $artikel = DB::table('articles')->where('judul', '=', $judul)->first();
         return view('artikel.show', compact('artikel'));
     }
 

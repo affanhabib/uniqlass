@@ -46,9 +46,9 @@ class MitraController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($nama)
     {
-        $mitra = Mitra::find($id);
+        $mitra = DB::table('mitras')->where('nama', '=', $nama)->first();
         return view('mitra.show', compact('mitra'));
     }
 

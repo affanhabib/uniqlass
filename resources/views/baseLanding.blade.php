@@ -119,6 +119,7 @@
                 </div>
             </div>
             @yield('event')
+            @yield('artikel')
             <div class="bg-light py-5">
                 <div class="container pt-2 pb-5">
                     <div class="d-flex justify-content-center">

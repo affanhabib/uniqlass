@@ -10,10 +10,10 @@
     <div class="container my-5">
         @foreach ($event as $evt)
         @if($evt->tanggal_berakhir < date('Y-m-d'))
-        <div class="card mb-4 eventEnd" style="max-width: 750px;">
+        <div class="mb-4 eventEnd" style="max-width: 750px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ asset('img/public/poster/') }}/{{ $evt->poster }}" alt="..." style="max-width: 200px; border-bottom-left-radius: 1em; border-top-left-radius: 1em;">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('img/public/poster/') }}/{{ $evt->poster }}" alt="..." style="max-width: 200px;">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -32,10 +32,10 @@
             </div>
         </div>
         @else
-        <div class="card mb-4" style="max-width: 750px;">
+        <div class="mb-4" style="max-width: 750px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ asset('img/public/poster/') }}/{{ $evt->poster }}" alt="..." style="max-width: 200px; border-bottom-left-radius: 1em; border-top-left-radius: 1em;">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('img/public/poster/') }}/{{ $evt->poster }}" alt="..." style="max-width: 200px;">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -48,7 +48,7 @@
                                 {!! $evt->deskripsi !!}
                             @endif
                         </span>
-                        <p class="card-text"><a href="{{ route('event.show', $evt->id) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($evt->updated_at)) }}</small></p>
+                        <p class="card-text"><a href="{{ route('event.show', $evt->judul_event) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($evt->updated_at)) }}</small></p>
                     </div>
                 </div>
             </div>

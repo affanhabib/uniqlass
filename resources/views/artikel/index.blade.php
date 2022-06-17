@@ -9,10 +9,10 @@
     </div>
     <div class="container my-5">
         @foreach ($artikel as $art)
-        <div class="card mb-4" style="max-width: 750px;">
+        <div class="mb-4" style="max-width: 750px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ asset('img/public/header/') }}/{{ $art->header }}" alt="..." style="max-width: 200px; border-bottom-left-radius: 1em; border-top-left-radius: 1em;">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('img/public/header/') }}/{{ $art->header }}" alt="..." style="max-width: 200px;">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -21,10 +21,11 @@
                             {!! $art->artikel = substr($art->artikel, 0, 97) . '...';
                             $art->artikel !!}
                         </span>
-                        <p class="card-text"><a href="{{ route('artikel.show', $art->id) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($art->updated_at)) }}</small></p>
+                        <p class="card-text"><a href="{{ route('artikel.show', $art->judul) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($art->updated_at)) }}</small></p>
                     </div>
                 </div>
             </div>
+            <hr style="background-color: grey">
         </div>
         @endforeach
     </div>

@@ -46,9 +46,9 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($judul)
     {
-        $event = Event::find($id);
+        $event = DB::table('events')->where('judul_event', '=', $judul)->first();
         return view('event.show', compact('event'));
     }
 

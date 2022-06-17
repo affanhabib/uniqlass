@@ -9,10 +9,10 @@
     </div>
     <div class="container my-5">
         @foreach ($mitra as $mtr)
-        <div class="card mb-4" style="max-width: 750px;">
+        <div class="mb-4" style="max-width: 750px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ asset('img/public/logo/') }}/{{ $mtr->logo }}" alt="..." style="max-width: 200px; border-bottom-left-radius: 1em; border-top-left-radius: 1em;">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('img/public/logo/') }}/{{ $mtr->logo }}" alt="..." style="max-width: 200px;">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -25,7 +25,7 @@
                                 {!! $mtr->deskripsi !!}
                             @endif
                         </span>
-                        <p class="card-text"><a href="{{ route('mitra.show', $mtr->id) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($mtr->updated_at)) }}</small></p>
+                        <p class="card-text"><a href="{{ route('mitra.show', $mtr->nama) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($mtr->updated_at)) }}</small></p>
                     </div>
                 </div>
             </div>

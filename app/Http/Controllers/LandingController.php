@@ -24,6 +24,7 @@ class LandingController extends Controller
         $data['carousel'] = DB::table('events')->where('show_carousel', '=', '1')->get();
         $data['event'] = DB::table('events')->skip(0)->take(3)->latest()->get();
         $data['mitra'] = Mitra::all();
+        $data['artikel'] = DB::table('articles')->skip(0)->take(5)->latest()->get();
         return view('landing', ['data' => $data]);
     }
 

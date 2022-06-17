@@ -393,3 +393,39 @@
 </div>
 @endif
 @endsection
+
+@section('artikel')
+@if ($data['artikel']->isNotEmpty())
+<div class="py-5">
+    <div class="container pt-2 pb-5">
+        <div class="d-flex justify-content-center">
+            <h2 class="mitra">Yang Harus Kamu baca</h2>
+        </div>
+        <div class="container mt-3">
+            @foreach ($data['artikel'] as $art)
+            <div class="mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="{{ asset('img/public/header/') }}/{{ $art->header }}" alt="..." style="max-width: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text text-muted">{{ date('d F Y', strtotime($art->updated_at)) }}</p>
+                            <h5 class="card-title"><a href="{{ route('artikel.show', $art->judul) }}">{{ $art->judul }}</a></h5>
+                            <p class="card-text text-muted">{{ $art->author }}</p>
+                        </div>
+                    </div>
+                </div>
+                <hr style="background-color: grey">
+            </div>
+            @endforeach
+            <div class="col d-none d-md-block">
+                <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
+                    <a type="button" class="btn btn-outline-success" href="/artikel">Lihat Semua Artikel Uniqlass</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
+@endsection
