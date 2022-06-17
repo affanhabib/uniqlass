@@ -24,11 +24,30 @@
     </head>
     <body>
         <div class="bg-white">
-            <nav class="navbar navbar-light bg-white">
-                <div class="container d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+                <div class="container">
                     <a class="navbar-brand" href="{{url('/')}}">
                         <img class="" src="{{ asset('img/uniqlass_no background.png') }}" alt="" height="40">
                     </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-lg-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/mitra">Mitra</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/event">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/artikel">Artikel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/tentang-kami">Tentang Kami</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <div>

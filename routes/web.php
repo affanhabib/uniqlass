@@ -23,4 +23,5 @@ Auth::routes();
 Route::resource('/', 'LandingController');
 Route::resource('/tentang-kami', 'TentangController');
 Route::resource('/event', 'EventController');
-Route::resource('mitra', 'MitraController');
+Route::resource('/mitra', 'MitraController');
+Route::resource('/artikel', 'ArtikelController');

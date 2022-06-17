@@ -4,15 +4,12 @@
 <div>
     <div class="banner d-flex align-items-center">
         <div class="container">
-            <h1 class="title text-white">Mitra Uniqlass</h1>
+            <h1 class="title text-white">{{ $mitra->nama }}</h1>
         </div>
     </div>
     <div class="container my-5">
         <div class="row">
             <div class="col-md-6">
-                <div class="row">
-                    <h2>{{ $mitra->nama }}</h2>
-                </div>
                 <div class="row text-secondary">
                     <p>Berdiri Sejak {{ $mitra->tahun_berdiri }}</p>
                 </div>
