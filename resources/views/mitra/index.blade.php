@@ -25,7 +25,7 @@
                                 {!! $mtr->deskripsi !!}
                             @endif
                         </span>
-                        <p class="card-text"><a href="{{ route('mitra.show', $mtr->nama) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($mtr->updated_at)) }}</small></p>
+                        <p class="card-text"><a href="{{ route('mitra.show', Str::slug($mtr->nama)) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($mtr->updated_at)) }}</small></p>
                     </div>
                 </div>
             </div>

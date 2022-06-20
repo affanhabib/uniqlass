@@ -48,7 +48,7 @@
                                 {!! $evt->deskripsi !!}
                             @endif
                         </span>
-                        <p class="card-text"><a href="{{ route('event.show', $evt->judul_event) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($evt->updated_at)) }}</small></p>
+                        <p class="card-text"><a href="{{ route('event.show', Str::slug($evt->judul_event)) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($evt->updated_at)) }}</small></p>
                     </div>
                 </div>
             </div>

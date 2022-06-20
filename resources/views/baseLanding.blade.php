@@ -23,6 +23,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62b03a1388a849001a3893d6&product=inline-share-buttons' async='async'></script>
     </head>
     <body>
         <div class="bg-white">
