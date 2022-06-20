@@ -48,7 +48,7 @@ class EventController extends Controller
      */
     public function show($judul)
     {
-        $event = DB::table('events')->where('judul_event', '=', $judul)->first();
+        $event = DB::table('events')->where('slug', '=', $judul)->first();
         return view('event.show', compact('event'));
     }
 

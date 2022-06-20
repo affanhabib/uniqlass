@@ -48,7 +48,7 @@ class MitraController extends Controller
      */
     public function show($nama)
     {
-        $mitra = DB::table('mitras')->where('nama', '=', $nama)->first();
+        $mitra = DB::table('mitras')->where('slug', '=', $nama)->first();
         return view('mitra.show', compact('mitra'));
     }
 
