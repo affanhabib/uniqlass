@@ -21,6 +21,8 @@
 
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62b03a1388a849001a3893d6&product=inline-share-buttons' async='async'></script>
     </head>
     <body>
         <div class="bg-white">

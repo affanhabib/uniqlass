@@ -48,7 +48,7 @@ class ArtikelController extends Controller
      */
     public function show($judul)
     {
-        $artikel = DB::table('articles')->where('judul', '=', $judul)->first();
+        $artikel = DB::table('articles')->where('slug', '=', $judul)->first();
         return view('artikel.show', compact('artikel'));
     }
 

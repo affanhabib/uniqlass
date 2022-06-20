@@ -21,7 +21,7 @@
                             {!! $art->artikel = substr($art->artikel, 0, 97) . '...';
                             $art->artikel !!}
                         </span>
-                        <p class="card-text"><a href="{{ route('artikel.show', $art->judul) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($art->updated_at)) }}</small></p>
+                        <p class="card-text"><a href="{{ route('artikel.show', Str::slug($art->judul)) }}">Selengkapnya</a><br><small class="text-muted">Last updated {{ date('l, d F Y', strtotime($art->updated_at)) }}</small></p>
                     </div>
                 </div>
             </div>
