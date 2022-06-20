@@ -1,5 +1,7 @@
 @extends('layouts.base')
 
+@section('title', $artikel->judul)
+
 @section('content')
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0&appId=516866793530631&autoLogAppEvents=1" nonce="oexAPd2R"></script>

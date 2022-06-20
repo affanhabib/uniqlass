@@ -1,5 +1,7 @@
 @extends('layouts.base')
 
+@section('title', $mitra->nama)
+
 @section('content')
 <div>
     <div class="banner d-flex align-items-center">

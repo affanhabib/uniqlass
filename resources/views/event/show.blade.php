@@ -1,5 +1,7 @@
 @extends('layouts.base')
 
+@section('title', $event->judul_event)
+
 @section('content')
 <div class="pb-5">
     <div class="container">
@@ -44,6 +46,9 @@
             <a type="button" class="btn btn-success" href="{{ $event->link }}" target="_blank">Daftar Event</a>
             @endif
             <a type="button" class="btn btn-outline-success ml-3" href="http://wa.me/6282340576107 " target="_blank">Hubungi Kami</a>
+        </div>
+        <div class="row pt-5">
+            <div class="sharethis-inline-share-buttons"></div>
         </div>
     </div>
 </div>
