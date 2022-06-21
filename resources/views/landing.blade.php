@@ -54,7 +54,7 @@
             <img src="{{ asset('img/uniqlass_no background.png') }}" alt="" height="90">
         </div>
         <div class="d-flex justify-content-center">
-            <p class="text-center col-10 desc my-5">{!! $data['homepage']->deskripsi !!}</p>
+            <span class="text-center col-10 desc my-5">{!! $data['homepage']->deskripsi !!}</span>
         </div>
         <div class="d-flex justify-content-center">
             <a type="button" class="btn btn-outline-success" href="{{url('tentang-kami')}}">Tentang Uniqlass</a>
