@@ -16,7 +16,8 @@
                     <h6 class="name">{{ $crs->program }} {{ $crs->subprogram }}</h6>
                     <h1 class="title pt-1 pb-3">{{ $crs->judul_event }}</h5>
                     <!-- <span class="text-secondary pb-5">{!! $crs->deskripsi !!}</span> -->
-                    <a type="button" class="btn btn-success" href="//$crs->link">Daftar Sekarang</a>
+                    {{ $link = "//$crs->link" }}
+                    <a type="button" class="btn btn-success" href="{{ $link }}">Daftar Sekarang</a>
                 </div>
             </div>
         </div>
