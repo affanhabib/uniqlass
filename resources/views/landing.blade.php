@@ -373,7 +373,7 @@
                         <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
-                            <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
+                            <h5 class="card-title mb-3" style="height: 3rem;">{{ $evt->judul_event }}</h5>
                             <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
                         </div>
                     </div>
