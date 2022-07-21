@@ -363,7 +363,7 @@
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
                             <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
-                            <a type="button" class="btn btn-success" href="{{ route('event.show',$evt->judul_event) }}">Selengkapnya</a>
+                            <a type="button" class="btn btn-success" href="{{ route('event.show', Str::slug($evt->judul_event)) }}">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -411,7 +411,7 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <p class="card-text text-muted">{{ date('d F Y', strtotime($art->updated_at)) }}</p>
-                            <h5 class="card-title"><a href="{{ route('artikel.show', $art->judul) }}">{{ $art->judul }}</a></h5>
+                            <h5 class="card-title"><a href="{{ route('artikel.show', Str::slug($art->judul)) }}">{{ $art->judul }}</a></h5>
                             <p class="card-text text-muted">{{ $art->author }}</p>
                         </div>
                     </div>
