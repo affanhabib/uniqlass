@@ -374,7 +374,7 @@
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
                             <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
-                            <button type="button" class="btn btn-success mt-5" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
+                            <button type="button" class="btn btn-success pt-5" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
                         </div>
                     </div>
                 </div>
