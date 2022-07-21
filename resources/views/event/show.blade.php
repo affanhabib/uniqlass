@@ -43,8 +43,7 @@
             @if($event->tanggal_berakhir < date('Y-m-d'))
             <a type="button" class="btn btn-success" disabled target="_blank">Daftar Event</a>
             @else
-            {{ $link = "http://$event->link" }}
-            <a type="button" class="btn btn-success" href="{{ $link }}" target="_blank">Daftar Event</a>
+            <a type="button" class="btn btn-success" href="{{ http://$event->link }}" target="_blank">Daftar Event</a>
             @endif
             <a type="button" class="btn btn-outline-success ml-3" href="http://wa.me/6282340576107 " target="_blank">Hubungi Kami</a>
         </div>

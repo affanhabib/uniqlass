@@ -16,8 +16,7 @@
                     <h6 class="name">{{ $crs->program }} {{ $crs->subprogram }}</h6>
                     <h1 class="title pt-1 pb-3">{{ $crs->judul_event }}</h5>
                     <!-- <span class="text-secondary pb-5">{!! $crs->deskripsi !!}</span> -->
-                    {{ $link = "http://$crs->link" }}
-                    <a type="button" class="btn btn-success" href="{{ $link }}">Daftar Sekarang</a>
+                    <a type="button" class="btn btn-success" href="{{ http://$crs->link }}">Daftar Sekarang</a>
                 </div>
             </div>
         </div>
@@ -374,8 +373,8 @@
                         <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
-                            <h5 class="card-title mb-3" style="height: 3rem;">{{ $evt->judul_event }}</h5>
-                            <button type="button" class="btn btn-success" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
+                            <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
+                            <button type="button" class="btn btn-success mt-5" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
                         </div>
                     </div>
                 </div>
