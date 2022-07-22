@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <span class="material-icons-outlined">watch_later</span>
-                <p class="pl-3">{{ date('h:i', strtotime($event->waktu)) }} - Selesai WIB</p>
+                <p class="pl-3">{{ date('H:i', strtotime($event->waktu)) }} - Selesai WIB</p>
             </div>
             <div class="row pt-2">
                 <span class="material-icons-outlined">person</span>
