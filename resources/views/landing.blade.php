@@ -363,7 +363,7 @@
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
                             <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
-                            <a type="button" class="btn btn-success" href="{{ route('event.show', Str::slug($evt->judul_event)) }}">Selengkapnya</a>
+                            <a type="button" class="btn btn-success mt-5" href="{{ route('event.show', Str::slug($evt->judul_event)) }}">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -373,8 +373,8 @@
                         <img src="{{ asset('img/event/event.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">{{ $evt->program }} {{ $evt->subprogram }}</h6>
-                            <h5 class="card-title" style="height: 50rem;">{{ $evt->judul_event }}</h5>
-                            <button type="button" class="btn btn-success py-5" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
+                            <h5 class="card-title" style="height: 3rem;">{{ $evt->judul_event }}</h5>
+                            <button type="button" class="btn btn-success mt-5" disabled data-bs-toggle="button" autocomplete="off">Selengkapnya</button>
                         </div>
                     </div>
                 </div>
